@@ -1,0 +1,27 @@
+/* Fuerza el cierre automático */
+.Toastify__toast {
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 14px;
+}
+
+.Toastify__progress-bar {
+  height: 4px;
+}
+
+/* Soluciona el bug de toast fijo */
+.Toastify__toast--success {
+  background: #ffdd00;
+  color: #111;
+  font-weight: 600;
+  border-left: 5px solid #444;
+}
+
+.Toastify__close-button {
+  color: #111;
+  opacity: 0.7;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}

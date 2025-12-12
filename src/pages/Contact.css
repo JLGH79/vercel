@@ -1,0 +1,86 @@
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  font-family: 'Bebas Neue', sans-serif;
+  padding-top: 80px;         
+}
+.contact-section {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url('../images/fondo-general.jpg') no-repeat center center/cover;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: slideDown 0.7s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.contact-card h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border-color: #000; 
+  outline: none;
+}
+
+.contact-card button {
+width: 100%;
+  background: #ffce00;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.contact-card button:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

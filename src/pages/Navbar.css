@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Para que funcionen los dos layouts */
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* --- LOGO --- */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+ font-size: clamp(3.5rem, 8vw, 6rem);
+
+  
+}
+
+.logo {
+  height: 98px; /* LOGO MÁS GRANDE */
+  width: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.logo-text {
+  color: #f8d80e;
+  text-transform: uppercase;
+}
+
+.logo-text .tienda {
+  color: white;
+}
+
+/* --- HAMBURGUESA MOBILE --- */
+.menu-toggle {
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #f8d80e;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* --- NAV LINKS MOBILE (menu lateral) --- */
+.nav-links {
+  list-style: none;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo-link {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(20,20,20,0.97);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    padding: 1.2rem;
+    border-radius: 0 0 8px 8px;
+    box-shadow: -2px 4px 12px rgba(0,0,0,0.4);
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 1050;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav-links li {
+    transform: translateX(50px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .nav-links.active li {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav-links.active li:nth-child(1) { transition-delay: 0.05s; }
+  .nav-links.active li:nth-child(2) { transition-delay: 0.10s; }
+  .nav-links.active li:nth-child(3) { transition-delay: 0.15s; }
+  .nav-links.active li:nth-child(4) { transition-delay: 0.20s; }
+  .nav-links.active li:nth-child(5) { transition-delay: 0.25s; }
+
+  .nav-links li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .nav-links li a:hover {
+    color: #f8d80e;
+  }
+
+  .usuario {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .logout-btn, .login-btn {
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* 🖥️ DESKTOP */
+@media (min-width: 901px) {
+  .navbar {
+    padding-bottom: 20px;
+  }
+
+  .logo {
+    height: 95px;
+  }
+
+  .logo-link {
+    font-size: clamp(5rem, 11vw, 8rem);
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 6px;
+    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .usuario {
+    width: auto;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .logout-btn, .login-btn {
+    width: auto;
+    font-size: 1rem;
+  }
+}
+
+/* --- LOGIN, USUARIO, LOGOUT --- */
+.login-btn {
+  background: linear-gradient(90deg, #ffd700, #f1c40f);
+  color: #222;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  border: 2px solid #bfa005;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255,215,0,0.2);
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 2px solid #f8d80e;
+  color: #f8d80e;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #f8d80e;
+  color: black;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(255,255,0,0.3);
+}
+
+.usuario {
+  color: #f8d80e;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* --- FOOTER FIX (no se mueve) --- */
+footer {
+  position: relative;
+  z-index: 10;
+  margin-top: auto;
+  width: 100%;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.producto-detalle-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #f8d80e;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+/* --- TÍTULO --- */
+.producto-detalle-container h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #f8d80e;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+/* --- TARJETA DENTRO DE DETALLE --- */
+.producto-detalle-card {
+  list-style: none;
+  padding: 25px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  border: 2px solid #333;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+.producto-detalle-card p {
+  color: #e0e0e0;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.producto-detalle-card strong {
+  color: #f8d80e;
+}
+
+/* --- IMAGEN --- */
+.producto-detalle-card img {
+  width: 70%;
+  max-width: 380px;
+  border-radius: 10px;
+  border: 2px solid #f8d80e;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.producto-detalle-card img:hover {
+  transform: scale(1.03);
+}
+
+/* --- BOTÓN VOLVER --- */
+.boton-volver {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 22px;
+  background: #f8d80e;
+  color: #111;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+  background: white;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(255,255,0,0.3);
+  transform: translateY(-2px);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 650px) {
+  .producto-detalle-container {
+    padding: 20px;
+  }
+
+  .producto-detalle-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .producto-detalle-card img {
+    width: 90%;
+  }
+}

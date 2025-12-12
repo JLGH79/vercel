@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Zapatillas Topper Candun De Basketball Negros Para Hombre",
+    "descripcion": "Para lucirte ante cualquier adversario, llegaron las nuevas botas Candun.",
+    "avatar": "https://articulo.mercadolibre.com.ar/MLA-1314551914-zapatillas-topper-candun-de-basketball-negros-para-hombre-_JM?searchVariation=176373475328#polycard_client=search-nordic&searchVariation=176373475328&search_layout=grid&position=9&type=item&tracking_id=b34e6311-48e7-4b36-b47d-ea1724cbd529",
+    "precio": "57.653",
+    "id": "1"
+  },
+  {
+    "nombre": "Zapatillas Runfalcon 5 adidas Sport 78",
+    "descripcion": "Tanto en la pista como en la cinta de correr, alcanzá todas tus metas con estas zapatillas de running adidas. Incorporan una mediasuela con amortiguación Cloudfoam que te ofrece una pisada más cómoda y suave.",
+    "avatar": "https://articulo.mercadolibre.com.ar/MLA-2020859604-zapatillas-runfalcon-5-adidas-sport-78-tienda-oficial-_JM?searchVariation=187047592125#polycard_client=search-nordic&searchVariation=187047592125&search_layout=grid&position=2&type=item&tracking_id=ed6ea422-3819-4d32-a9a4-1f0af5d78a65",
+    "precio": "109.999",
+    "id": "2"
+  },
+  {
+    "nombre": "Lindsay Mann",
+    "descripcion": "Innovative Computer featuring tepid technology and Aluminum construction",
+    "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/58.jpg",
+    "precio": "793.65",
+    "id": "3"
+  },
+  {
+    "nombre": "Dr. Lynda Gutkowski",
+    "descripcion": "Our eagle-friendly Shoes ensures tame comfort for your pets",
+    "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/79.jpg",
+    "precio": "840.19",
+    "id": "4"
+  },
+  {
+    "nombre": "Gilberto Harvey",
+    "descripcion": "Discover the comfortable new Shoes with an exciting mix of Plastic ingredients",
+    "avatar": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/87.jpg",
+    "precio": "440.25",
+    "id": "5"
+  },
+  {
+    "nombre": "Miss Stella Kshlerin",
+    "descripcion": "Our bitter-inspired Computer brings a taste of luxury to your portly lifestyle",
+    "avatar": "https://avatars.githubusercontent.com/u/96407922",
+    "precio": "737.63",
+    "id": "6"
+  }
+]

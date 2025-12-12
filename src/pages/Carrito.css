@@ -1,0 +1,132 @@
+.cart-page {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-top: 80px; /* misma altura visual que Contact */
+}
+
+.cart-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  font-family: 'Bebas Neue', sans-serif;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+.cart-title {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #222;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  background: #f7f7f7;
+  padding: 15px 18px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item-info {
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.cart-item-sub {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+.cart-qty-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.cart-qty-btn {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 2px solid #222;
+  background: transparent;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-qty-btn:hover {
+  background: #222;
+  color: #ffce00;
+}
+
+.cart-total {
+  font-size: 2rem;
+  text-align: center;
+  background: #ffce00;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #111;
+  margin: 10px 0;
+}
+
+.cart-btn {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.cart-btn.pay {
+  background: #222;
+  color: #ffce00;
+}
+
+.cart-btn.trash {
+  background: transparent;
+  border: 2px solid #222;
+  color: #222;
+}
+
+.cart-btn.trash:hover {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.cart-btn.pay:hover {
+  background: #444;
+  transform: translateY(-2px) scale(1.02);
+}

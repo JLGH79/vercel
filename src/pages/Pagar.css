@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.pagar-page {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 2rem;
+  padding-top: 80px; /* para quedar a la misma altura que contacto */
+  background-color: none;
+}
+
+/* Tarjeta principal */
+.pagar-card {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  padding: 26px 22px;
+  border-radius: 18px;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.22);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(15px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+/* Encabezado usuario */
+.pagar-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.pagar-header h2 {
+  font-size: 2.4rem;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.pagar-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Token */
+.pagar-token {
+  background: #e8e8e8;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  word-break: break-all;
+  margin: 10px 0 18px;
+  border-left: 4px solid #ffce00;
+}
+
+/* Lista de productos */
+.pagar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pagar-item {
+  background: #fafafa;
+  padding: 16px 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.pagar-item:hover {
+  transform: scale(1.02);
+}
+
+.pagar-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Texto del producto */
+.pagar-info .nombre {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.pagar-info .precio,
+.pagar-info .cantidad,
+.pagar-info .subtotal {
+  font-size: 1.15rem;
+  color: #444;
+}
+
+/* Total */
+.pagar-total {
+  text-align: center;
+  font-size: 2rem;
+  background: #ffce00;
+  color: #111;
+  padding: 12px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 15px rgba(255,206,0,0.4);
+}
+
+/* Botones */
+.pagar-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* botón vaciar carrito */
+.pagar-btn.trash {
+  background: transparent;
+  border: 2px solid #111;
+  color: #111;
+}
+
+.pagar-btn.trash:hover {
+  background: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 3px 10px rgba(220,53,69,0.4);
+}
+
+/* botón confirmar pago */
+.pagar-btn.pay {
+  background: #111;
+  color: #ffce00;
+  margin-top: 10px;
+}
+
+.pagar-btn.pay:hover {
+  background: #333;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* botón seguir comprando / volver */
+.pagar-btn.back {
+  background: #444;
+  color: white;
+}
+
+.pagar-btn.back:hover {
+  background: #666;
+  transform: translateY(-2px);
+}

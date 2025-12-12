@@ -1,0 +1,121 @@
+
+.reviews-page {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   
+  align-items: center;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 80px 20px 20px;   
+}
+
+.reviews-section {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url('../images/fondo-general.jpg') no-repeat center center/cover;
+  color: black;
+}
+
+
+.reviews-page h1 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+.reviews-container 
+.reviews-style-container {
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}         
+
+
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.review-card {
+  background: #fafafa;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #ffb700;
+}
+
+.review-card .rating {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.review-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+  border-color: #ffce00;
+  outline: none;
+}
+
+.review-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #ffce00;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.review-form button:hover {
+  background: #e6b800;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .reviews-container {
+    padding: 20px;
+  }
+
+  .reviews-page h1 {
+    font-size: 2rem;
+  }
+}
